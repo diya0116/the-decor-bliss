@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Decor Bliss</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --pink: #f6c7d3;
+            --dark: #7b2e45;
+            --cream: #faf5ef;
+            --card: #fff7f8
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Poppins, sans-serif;
+            background: var(--cream);
+            color: #444
+        }
+
+        .top {
+            background: #a53c57;
+            color: #fff;
+            text-align: center;
+            padding: 8px;
+            font-size: 12px
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 8%;
+            background: #fff;
+            position: sticky;
+            top: 0
+        }
+
+        .logo {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 34px;
+            color: var(--dark)
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #555;
+            margin: 0 12px
+        }
+
+        .btn {
+            background: #a53c57;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 60px 8%;
+            align-items: center
+        }
+
+        .hero h1 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 64px;
+            color: var(--dark);
+            line-height: 0.95
+        }
+
+        .nav img {
+            height: 50px;
+            border-radius: 50%
+        }
+
+        .hero img,
+        .card img,
+        .gallery img,
+        .about img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 18px;
+            background: #eee
+        }
+
+        .hero img {
+            height: 400px;
+        }
+
+        .features,
+        .contact {
+            background: var(--pink);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 25px 8%;
+            text-align: center;
+            gap: 10px
+        }
+
+        .sec {
+            padding: 60px 8%
+        }
+
+        .title {
+            text-align: center;
+            font-family: "Cormorant Garamond", serif;
+            color: var(--dark);
+            font-size: 48px;
+            margin-bottom: 30px
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px
+        }
+
+        .card {
+            background: var(--card);
+            padding: 16px;
+            border-radius: 18px;
+            text-align: center
+        }
+
+        .card .img {
+            height: 120px
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px
+        }
+
+        .gallery .img {
+            aspect-ratio: 1
+        }
+
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center
+        }
+
+        .map {
+            height: 220px;
+            background: #ddd;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .footer {
+            padding: 30px 8%;
+            text-align: center;
+            border-top: 1px solid #ddd
+        }
+
+        .social a {
+            margin: 0 8px;
+            text-decoration: none;
+            color: var(--dark)
+        }
+
+        @media(max-width:900px) {
+
+            .hero,
+            .about,
+            .features,
+            .services,
+            .gallery,
+            .contact {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .hero h1 {
+                font-size: 46px
+            }
+        }
+
+        @media(max-width:600px) {
+            .menu {
+                display: none
+            }
+
+            .hero,
+            .about,
+            .features,
+            .services,
+            .gallery,
+            .contact {
+                grid-template-columns: 1fr
+            }
+
+            .title {
+                font-size: 38px
+            }
+
+            .hero h1 {
+                font-size: 42px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">Premium Packaging For Your Most Special Moments</div>
+    <nav class="nav">
+        <div class="logo"><img src="./media/logo.jpeg" alt="Logo"></div>
+        <div class="menu"><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a
+                href="#contact">Contact</a></div><a class="btn"
+            href="https://wa.me/917696434843?text=Hey!%20I%20want%20to%20enquire">Let's Chat</a>
+    </nav>
+    <section class="hero">
+        <div>
+            <p>TROUSSEAU PACKAGING & MORE</p>
+            <h1>Beautifully Packed Moments</h1>
+            <p style="margin:18px 0 28px">Premium trousseau packaging, customised gift items and hampers crafted with
+                love.</p><a class="btn" href="#gallery">Explore Our Creations</a>
+        </div>
+        <div><img src="./media/hero.jpg" alt="Hero"></div>
+    </section>
+    <section class="features">
+        <div>🎁<p>Elegant Designs</p>
+        </div>
+        <div>❤️<p>Customised</p>
+        </div>
+        <div>✨<p>Premium Quality</p>
+        </div>
+        <div>🚚<p>Every Occasion</p>
+        </div>
+    </section>
+    <section class="sec" id="services">
+        <div class="title">Our Services</div>
+        <div class="services">
+            <div class="card">
+                <div class="img"><img src="./media/service1.jpg"></div>
+                <h3>Trousseau Packaging</h3>
+            </div>
+            <div class="card">
+                <div class="img"><img src="./media/service2.jpg"></div>
+                <h3>Gift Hampers</h3>
+            </div>
+            <div class="card">
+                <div class="img"><img src="./media/service3.jpg"></div>
+                <h3>Custom Packaging</h3>
+            </div>
+            <div class="card">
+                <div class="img"><img src="./media/service4.jpg"></div>
+                <h3>Corporate Gifting</h3>
+            </div>
+        </div>
+    </section>
+    <section class="sec" id="gallery" style="background:#ffd7e1">
+        <div class="title">Gallery</div>
+        <div class="gallery">
+            <div class="img"><img src="./media/g1.jpg"></div>
+            <div class="img"><img src="./media/g2.jpg"></div>
+            <div class="img"><img src="./media/g3.jpg"></div>
+            <div class="img"><img src="./media/g4.jpg"></div>
+            <div class="img"><img src="./media/g5.jpg"></div>
+        </div>
+    </section>
+    <section class="sec about" id="about">
+        <div>
+            <div class="title" style="text-align:left;margin-bottom:10px">The Decor Bliss</div>
+            <p>Packaging is more than a box — it's a feeling. We create premium trousseau packaging and curated gift
+                items for weddings, birthdays and special celebrations.</p><br><a class="btn" href="#contact">Know
+                More</a>
+        </div>
+        <div><img src="./media/about.jpg"></div>
+    </section>
+    <section class="contact" id="contact">
+        <div>
+            <h4>Call Us</h4>
+            <p>+91 7696434843</p>
+        </div>
+        <div>
+            <h4>WhatsApp</h4>
+            <p>Hey! I want to enquire</p>
+        </div>
+        <div>
+            <h4>Email</h4>
+            <p>thedecorbliss@gmail.com</p>
+        </div>
+        <div>
+            <h4>Location</h4>
+            <p>Patiala, India</p>
+        </div>
+    </section>
+    <section class="sec">
+        <div class="title">Contact Us</div>
+        <div class="map"><iframe src="https://www.google.com/maps?q=Patiala&output=embed" width="100%" height="100%"
+                style="border:0;border-radius:14px"></iframe></div>
+    </section>
+    <footer class="footer">
+        <div class="logo" style="font-size:30px">The Decor Bliss</div>
+        <!-- <p>Made with Heart 🤍</p> -->
+        <div class="social">
+            <a href="https://www.instagram.com/the_decor_bliss">Instagram</a>
+            <a href="https://www.facebook.com/the_decor_bliss">Facebook</a>
+            <a href="https://wa.me/917696434843?text=Hey!%20I%20want%20to%20enquire">WhatsApp</a>
+        </div>
+    </footer>
+    <script>document.querySelectorAll('a[href^="#"]').forEach(a => a.onclick = e => { e.preventDefault(); document.querySelector(a.getAttribute("href")).scrollIntoView({ behavior: "smooth" }) })</script>
+</body>
+
+</html>
